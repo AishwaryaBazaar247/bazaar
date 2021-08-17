@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function init(){
+        /* function init(){
             document.getElementsByTagName("h1")[2].innerText = "Welcome to your life";
-        };
+        }; */
         // window.onload = init;
         // onload = init;
        // window.addEventListener("load", init);
        // window.removeEventListener("load", init);
-       document.addEventListener("DOMContentLoaded", init);
+       // document.addEventListener("DOMContentLoaded", init);
+       var init = function(){
+        document.getElementsByTagName("h1")[2].innerText = "Welcome to your life";
+       }
+       window.onload = init;
     </script>
 </head>
 <!-- <body onload="init()"> -->
